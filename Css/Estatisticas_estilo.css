@@ -1,0 +1,501 @@
+/*.progressbar{
+    width: 100%;
+    border: 1px solid black;
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
+}
+.barra{
+    background: #3eba00;
+    height: 100%;
+}*/
+body{
+    padding: 0
+}
+.corpo_estatisticas{
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    /*    border: 1px solid black;*/
+    text-align: left
+}
+.corpo_estatisticas_cards{
+    /*    border: 1px solid black;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.card_statisticas{
+    /*    border: 1px solid black;*/
+    position: relative
+}
+.card_statisticas_view{
+    width: 100%;
+    box-sizing: border-box;
+    margin: -2px;
+    padding: 0 20px;
+    display: inline-block
+}
+.problemas_ano{
+    /*    border: 1px solid black;*/
+    text-align: left;
+    position: relative;
+}
+.select_ano{
+    height: 30px;
+    border: none;
+    border-top:1px solid #fa6f08;
+    background: none;
+    color: #fa6f08;
+    font-family: pirulen;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2
+}
+option{
+    background: #ededeb;
+    color: black;
+}
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;       /* remove default arrow */
+    background-image: url(...);   /* add custom arrow */
+}
+
+.problemas_mes{
+    border: 1px solid blue;
+    text-align: left;
+    position: relative;
+    margin-top: -30px;
+    width: 100%;
+    height: 560px;
+    border: none
+}
+.select_mes{
+    height: 50px;
+    border: none;
+    background: none;
+    color: black;
+    font-family: Roboto-Black;
+    text-transform: uppercase;
+    font-size: 30px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    /*    border: 1px solid black*/
+}
+.Estatisticas{
+    border: 1px solid red;
+    text-align: center;
+    width: 100%;
+    margin-top: -100px;
+    height: 575px;
+    border: none
+}
+
+
+
+.nrelatorios{
+    /*                border: 1px solid black;*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 150px;
+}
+.numerorelatorios{
+    /*                    border: 1px solid black;*/
+    margin: 0;
+    height: 100px;
+    line-height: 120px;
+    font-family: pirulen;
+    font-size: 80px;
+    color: #504184;
+    text-align: center
+        /*        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
+}
+.nomerelatorios{
+    /*        border: 1px solid black;*/
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Roboto-Bold;
+    text-align: center;
+    color: #5d7077
+
+}
+
+
+
+.estatisticasbarras{
+    display: block;
+    float: left;
+    width: 35%;
+    height: 450px;
+    /*        border: 1px solid black;*/
+}
+
+
+.Barra{
+    width: 20%;
+    display: inline-block;
+    /*    border: 1px solid black;*/
+    height: 350px;
+    overflow: hidden;
+    margin: -2px;
+    text-align: center
+}
+.Barra p{
+    margin: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    /*    border: 1px solid black*/
+}
+.Barra img{
+    margin: 0;
+    height: 30px;
+    /*    border: 1px solid black*/
+}
+.porcentagemT{
+    font-family: pirulen;
+    font-size: 20px;
+}
+.Barra_progress{
+    position: relative;
+    background: #d0d4d3;
+    width: 20px;
+    height: 250px;
+    margin: 0 auto;
+
+}
+.progress{
+    background: -moz-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(102,153,153,1)), color-stop(100%, rgba(46,61,66,1))); /* safari4+,chrome */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* w3c */
+    width: 100%;
+    position: absolute;
+    bottom: 0
+
+}
+
+.relacaoproblemasinformation{
+    margin-top: 10px;
+    text-align: left;
+    /*    border: 1px solid black;*/
+}
+.relacaoproblemasinformation p{
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    /*    border: 1px solid black;*/
+}
+.anoemes{
+    text-transform: uppercase;
+    font-family: Roboto-Bold;
+    font-size: 14px;
+    color: #a1aaa8
+}
+.information{
+    font-family: Roboto-Light;
+    font-size: 14px;
+    margin-top: 5px !important;
+    color: #5d7077;
+    font-weight: 700
+}
+
+
+.relacaoproblemas{
+    width: 29%;
+    /*    border: 1px solid black;*/
+    height: 450px;
+    float: left;
+    text-align: center
+}
+#relacaoproblemas{
+    width: 100%;
+    height: 100%;
+    display: table
+}
+.problemasecontrados_maisemenos_bloco{
+    width: 50%;
+    box-sizing: border-box;
+    /*    border: 1px solid black;*/
+    margin-top: 20px;
+    height: 100px;
+    float: left
+}
+.problemasecontrados,.problemasecontrados_maisemenos{
+    width: 100%;
+    /*    border: 1px solid black;*/
+}
+.problemasecontrados{
+    margin-bottom: 30px;
+}
+.problemasecontrados p{
+    margin: 0 auto;
+    box-sizing: border-box;
+    /*    border: 1px solid black;*/
+}
+.problemasecontradosnumero{
+    /*        border: 1px solid black;*/
+    width: 30%;
+    font-family: pirulen;
+    font-size: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #504184;
+    text-align: center
+}
+.problemasecontradoslabel{
+    /*    border: 1px solid black;*/
+    width: 50%;
+    text-align: center;
+    font-family: Roboto-Bold;
+    text-transform: uppercase;
+    color: #5d7077;
+    font-size: 15px;
+}
+
+
+.problemasecontrados_mais,.problemasecontrados_menos{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto-Regular;
+    font-weight: 700;
+    font-size: 15px;
+    height: 25px;
+    line-height: 25px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color: #a1aaa8;
+    /*    border: 1px solid black*/
+}
+.result{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto-Black;
+    font-size: 35px;
+    height: 40px;
+    line-height: 40px;
+    box-sizing: border-box;
+    color: #5d7077;
+    /*    border: 1px solid black*/
+}
+
+
+
+
+
+
+
+
+
+
+
+.piechart{
+    width: 35%;
+    /*    border: 1px solid black;*/
+    display: table;
+    height: 450px;
+    float: left;
+    text-align: center
+}
+.piechart img{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#piechart{
+    /*    border: 1px solid black;*/
+    margin: 0 auto;
+    width: 98.9%;
+    height: 350px;
+}
+
+
+
+.estatisticas_Notebooks{
+    border: 1px solid red;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    height: 560px;
+    border: none
+}
+
+
+.statisticasnotes{
+    display: block;
+    float: left;
+    width: 35%;
+    height: 450px;
+    /*    border: 1px solid black;*/
+    text-align: center;
+}
+.contnotes{
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*        border: 1px solid black;*/
+}
+.contnotes::-webkit-scrollbar-track {
+    background: #d0d4d3;
+}
+.contnotes::-webkit-scrollbar {
+    width: 3px;
+}
+.contnotes::-webkit-scrollbar-thumb {
+    background: #6c7f83;
+}
+.blocostatisticasnotes{
+    /*    border: 1px solid black;*/
+    width: 100%;
+    display: inline-block;
+    height: 60px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #d0d4d3;
+    margin: 5px 0
+}
+/*.blocostatisticasnotes:nth-of-type(1){
+    font-size: 80px;
+        border: 1px solid black;
+    width: 90%;
+}
+.blocostatisticasnotes:nth-of-type(2){
+    font-size: 60px;
+        border: 1px solid black;
+}
+.blocostatisticasnotes:nth-of-type(3){
+    font-size: 60px;
+        border: 1px solid black;
+}*/
+.numeronote{
+    float: left;
+    /*    border: 1px solid black;*/
+    height: 100%;
+    width: 15%;
+    display: table;
+    background: url('../Img/Icones/note.png') center no-repeat;
+    background-size: contain
+}
+.notesala{
+    /*    border: 1px solid black;*/
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Roboto-Bold;
+    text-align: center;
+    color: #5d7077;
+    margin: 0;
+    width: max-content;
+    margin-left: 15px;
+    float: left;
+}
+.barraH{
+    height: 20px;
+    padding: 9px 0;
+    float: left;
+    width: 75%;
+    margin-left: 15px;
+    /*    border: 1px solid black*/
+}
+.porcentagemTH{
+    /*    border: 1px solid black;*/
+    width: 15%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: black;
+    float: left;
+    margin: 0
+}
+.Barra_progressH{
+    /*    border: 1px solid black;*/
+    background: #d0d4d3;
+    width: 85%;
+    float: left;
+    height: 20px;
+}
+.progressH{
+    height: 20px;
+    width: 0;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(102,153,153,1)), color-stop(100%, rgba(46,61,66,1))); /* safari4+,chrome */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(102,153,153,1) 0%, rgba(46,61,66,1) 100%); /* w3c */
+}
+
+.noteocorrencias{
+    font-family: Roboto-Light;
+    color: #5d7077
+}
+
+
+
+
+.statisticasusuarios{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 450px;
+/*    border: 1px solid black;*/
+    text-align: center;
+
+}
+.cardusuarios{
+/*    border: 1px solid black;*/
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.cardusuarios header{
+    /*    border: 1px solid #5d7077;*/
+    width: 200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 200px;
+}
+.cardusuariosname{
+    font-size: 20px;
+/*    border: 1px solid black;*/
+    font-family: Roboto-Black
+}
+.cardusuarioestatisticas{
+    display: inline-block;
+    width: 50%;
+    margin: -2px;
+/*    background: white;*/
+    height: 100px;
+    overflow: hidden
+}
+.usuarioestatisticascount{
+    margin: 5px;
+    font-size: 35px;
+    color: #504184
+}
+.usuarioestatisticasname{
+    font-family: Roboto-Black;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 13px;
+    color: #5d7077
+}

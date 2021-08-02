@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Womby-Regular;
+    src: url('../Fontes/Womby-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../Fontes/Roboto-Regular.ttf');
+}
+.csscheckbox{
+    margin:1px 4px;
+    position:relative;
+    cursor:pointer;
+    display:inline-block;
+    vertical-align:middle;
+    text-align: center;
+}
+
+
+.csscheckbox input{
+    position:absolute;
+    opacity:0
+}
+.csscheckbox span{
+    position:relative;
+    display:inline-block;
+    padding: 0px 30px;
+    height:35px;
+    border:none;
+}
+.csscheckbox p{
+    position:relative;
+    display:inline-block;
+    z-index: 5;
+    margin: 0;
+    line-height: 35px;
+    color: #18121E;
+    font-family: Womby-Regular;
+}
+
+.csscheckbox span:after{
+    content:"";
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:white;
+    opacity:0;
+    -webkit-transition:all .15s ease-out;
+    transition:all .15s ease-out;
+    -webkit-transform:scale(.5);
+    transform:scale(.5);
+/*    -webkit-box-shadow: 0 2px 5px #999999;
+    box-shadow: 0px 1px 5px #999999;*/
+}
+.csscheckbox input:checked+span:after{
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+    background-color:#eee
+}
+.csscheckbox-default input:checked+span:after{background-color:#c9c9c9}
+/*.csscheckbox-warning input:checked+span:after{background-color:#deb25c}
+.csscheckbox-danger input:checked+span:after{background-color:#984B43}
+.csscheckbox-info input:checked+span:after{background-color:#5cafde}
+.csscheckbox-success input:checked+span:after{background-color:#afde5c}
+.csscheckbox-primary input:checked+span:after{background-color:#5ccdde}*/

@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../Fontes/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url('../Fontes/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../Fontes/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../Fontes/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: pirulen;
+    src: url('../Fontes/pirulen.ttf');
+}
+
+
+.formalterar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background: url('../Img/Backgrounds/fundomensagemalterar.png') center no-repeat;
+}
+#formalterar{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.corpo_formalterar{
+    /*    border: 1px solid #ededeb;*/
+    margin: 0 auto;
+    width: 100%
+}
+#corpo_formalterar{
+    /*        border: 1px solid #ededeb;*/
+    height: 100%;
+    width: 100%;
+    display: table
+}
+.corpo_formalterar_top{
+    height: 45px;
+    /*    border: 1px solid white;*/
+    width: 50%
+}
+.corpo_formalterar_top p{
+    font-family: pirulen;
+    text-align: right;
+    color: white;
+    margin: 0;
+    line-height: 45px;
+    height: 45px;
+    display: none;
+    border-bottom: 1px solid #ededeb;
+}
+.corpo_formalterar_corpo{
+/*        border: 1px solid #ededeb;*/
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 900px;
+    text-align: center
+}
+.corpoformalterarcarousel{
+    width: 900px;
+    height: 250px;
+    overflow: hidden;
+    display: none;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    /*            border: 1px solid black;*/
+
+}
+.formalterarcarousel{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 3610px; /* < ---- corousel*/
+}
+.formalterarrelatorio{
+    width: 100%;
+    height: 100%
+}
+.form_alterar{
+    float: left;
+    width: 900px;
+    height: 100%;
+    position: relative;
+}
+.form_informarproblema{
+    display: none
+}
+.Formalterar_container{
+    /*            border: 1px solid red;*/
+    width: 900px;
+    height: 100%;
+    display: table;
+    position: relative;
+}
+
+.formalterardataehora{
+    display: none;
+}
+.formalterar_datahora input,input[type='date']{
+    /*        border: 1px solid black;*/
+    background: none;
+    font-size: 40px;
+    float: left;
+    height: 70px;
+    font-family: pirulen;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    color: #bdc1c0;
+    margin-left: 10px;
+}
+.Formalterar_corpo_container{
+    /*            border: 1px solid pink;*/
+    width:100%;
+    display: table;
+    position: relative
+}
+.checkalterar img{
+    float: left
+}
+.Linhaalterar{
+    /*    border: 1px solid #d0d4d3;*/
+    width: 60%;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Linhaalterar img{
+    /*    border: 1px solid #d0d4d3;*/
+    height: 70px;
+    width: 70px;
+    margin: 0;
+    float: left
+}
+input[type=date]::-webkit-clear-button,
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+input[type=time]::-webkit-clear-button,
+input[type=time]::-webkit-inner-spin-button,
+input[type=time]::-webkit-time-picker-indicator {
+    display: none;
+}
+
+.perguntaalterar{
+    /*    border: 1px solid black;*/
+    font-family: Roboto-Regular;
+    color: #ededeb;
+    margin: 5px;
+    font-size: 16px;
+    text-transform: uppercase
+}
+
+.inputsalterarCheckbox{
+    /*        border: 1px solid black;*/
+}
+.inputsalterarCheckbox img{
+    /*    border: 1px solid black;*/
+    float: left
+}
+
+
+
+
+.corpo_formalterar_bottom{
+    height: 20px;
+    /*    border: 1px solid white;*/
+    margin: 0 auto;
+    width: 100%
+}
+.corpo_formalterar_bottom hr{
+    display: none;
+    width: 50%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ededeb;
+    padding: 0; 
+    float: right;
+
+}
+.corpo_formalterar_fecharmensagem{
+    display: block;
+    width: 40%;
+    border: 0;
+    /*    border: 1px solid #ededeb;*/
+    padding: 0; 
+    float: right;
+    height: 40px;
+
+}
+.botaofecharalterar{
+    background: none;
+    height: 40px;
+    border: none;
+    padding:0 30px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    outline: none;
+    font-family: pirulen;
+    -webkit-transition:  cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -moz-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -ms-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -o-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    transition: cubic-bezier(.500, 1.000, .500, 1.000) all .4s; 
+    cursor: pointer;
+    display: none
+}
+
+
+
+
+
+
+
+.formalterarsalas{
+    display: none;
+}
+.formalterarsinalwifi{
+    display: none;
+}
+.formalterarnotebooks{
+    display: none;
+}
+.formalterarproblema{
+    display: none;
+}
+
+
+
+
+.informacao_alterar{
+    /*    border: 1px solid black;*/
+    float: left;
+    height: 40px;
+    line-height: 40px
+}
+.informacao_alterar p{
+    font-family: Roboto-Light;
+    font-size: 14px;
+    color: white;
+    margin: 0
+}
+
+.Formalterar_container .botaoprosseguir{
+    background: #819ca3;
+    height: 40px;
+    border: none;
+    padding:0 30px;
+    float: right;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0, 1);
+    font-weight: 900;
+    outline: none;
+    font-family: pirulen;
+    -webkit-transition:  cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -moz-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -ms-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -o-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    transition: cubic-bezier(.500, 1.000, .500, 1.000) all .4s; 
+    cursor: pointer
+}
+.Formalterar_container_iconfinalizar{
+    /*    border: 1px solid black;*/
+    width: 100px;
+}
+.botaofinalizar{
+    background: #3eba00;
+    height: 40px;
+    border: none;
+    padding:0 30px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0, 1);
+    font-weight: 900;
+    outline: none;
+    font-family: pirulen;
+    -webkit-transition:  cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -moz-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -ms-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -o-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    transition: cubic-bezier(.500, 1.000, .500, 1.000) all .4s; 
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+#form_notebookproblema{
+    /*    border: 1px solid black;*/
+    float: left;
+    width: 900px;
+    display: none;/*none*/
+    position: relative;
+
+}
+#form_relateproblema{
+    /*    border: 1px solid black;*/
+    float: left;
+    width: 900px;
+    display: none;
+    position: relative;
+}
+#form_problema{
+    /*    border: 1px solid black;*/
+    float: left;
+    width: 900px;
+    display: none;
+    position: relative;
+}
+#form_informarproblema{
+    /*        border: 1px solid black;*/
+    float: left;
+    width: 900px;
+    display: none;
+    position: relative;
+}
+
+
+
+.backexlcuir{
+    /*    border: 1px solid black;*/
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: none;
+    overflow: hidden;
+    background: url('../Img/Backgrounds/fundomensagem.png') center no-repeat;
+}
+.backexlcuir_top{
+    height: 45px;
+    /*    border: 1px solid white;*/
+    width: 50%
+}
+.backexlcuir_top p{
+    font-family: pirulen;
+    text-align: right;
+    color: white;
+    margin: 0;
+    line-height: 45px;
+    height: 45px;
+    display: none;
+    border-bottom: 1px solid #ededeb;
+}
+#mensagem_corpo_img2{
+    width: 100%;
+    height: 100%;
+    display: table
+}
+#mensagem_corpo_img2 img{
+    display: none;
+    height: 100px
+}
+.backexcluir_corpo_img{
+    width: 30%;
+}
+.backexcluir_corpo_img img{
+    display: none;
+    height: 100px
+}
+.backexcluir_corpo_corpo{
+    width: 60%;
+}
+.backexcluir_corpo_corpo_top{
+    display: none;
+    font-family: Roboto-Black;
+    color: #ededeb;
+    font-size: 13px;
+    text-transform: uppercase
+}
+.backexcluir_corpo_corpo_mensagem{
+    display: none;
+    /*    border: 1px solid black;*/
+    margin: 0;
+    font-family: Roboto-Regular;
+    font-size: 14px;
+    color: #cfcfc9
+}
+.backexlcuir_bottom{
+    height: 20px;
+    /*    border: 1px solid white;*/
+    margin: 0 auto;
+    width: 100%
+}
+.backexlcuir_bottom hr{
+    display: none;
+    width: 50%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ededeb;
+    padding: 0; 
+    float: right;
+}
+.botaofecharexcluir{
+        background: none;
+    height: 40px;
+    border: none;
+    padding:0 30px;
+    margin-right: 50px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    outline: none;
+    font-family: pirulen;
+    -webkit-transition:  cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -moz-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -ms-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -o-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    transition: cubic-bezier(.500, 1.000, .500, 1.000) all .4s; 
+    cursor: pointer;
+    display: none
+}

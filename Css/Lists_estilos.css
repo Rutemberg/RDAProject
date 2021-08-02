@@ -1,0 +1,407 @@
+@font-face {
+    font-family: Womby-Regular;
+    src: url('../Fontes/Womby-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('../Fontes/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url('../Fontes/Roboto-Black.ttf');
+}
+
+/*NAVIBLUE
+#18121E
+
+GUNMETAL
+#233237
+
+RUSTYRED
+#984B43
+
+WARMYELLOW
+#EAC67A*/
+
+.backverrelatorio{
+    /*    border: 1px solid black;*/
+    height: 552px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+.verrelatorio{
+    /*    border: 1px solid black;*/
+    font-family: Roboto-Black;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    /*    background: white;*/
+    box-sizing: border-box;
+    position: relative
+}
+.verrelatorio_nomeUser{
+    /*    border: 1px solid black;*/
+    font-family: Roboto-Black;
+}
+.verrelatorio_nomeUser p{
+    margin: 2px 0;
+}
+.vnomeUser{
+    font-family: Roboto-Black;
+    font-size: 35px;
+    color: black;
+}
+.vinformationUser{
+    margin: 0;
+    font-size: 17px;
+    color: #5d7077;
+    font-family: Roboto-Regular;
+}
+
+.habilitarediçao{
+    /*    border: 1px solid black;*/
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0px;
+    border-bottom: 1px solid #6c7f83;
+}
+.habilitarediçao_excluir{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 57px;
+}
+.excluirrelatorio_button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    font-family: pirulen;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: #5d7077;
+    font-weight: 900;
+    opacity: .5;
+    -webkit-transition:  cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -moz-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -ms-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -o-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    transition: cubic-bezier(.500, 1.000, .500, 1.000) all .4s; 
+}
+.excluirrelatorio_button:hover{
+    opacity: 1
+}
+.habilitarediçao_button{
+    width: 100%;
+    height: 100%;
+    background: none;
+    font-family: pirulen;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none
+}
+.habilitarediçao_buttonsair{
+    width: 100%;
+    height: 100%;
+    background: none;
+    font-family: pirulen;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    display: none;
+    outline: none
+}
+.vrelatorio{
+/*    border: 1px solid red;*/
+    font-family: Roboto-Black;
+    width: 100%;
+    height: calc(100% - 111px);
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+.vrelatorio::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.vrelatorio_backpicUser{
+/*    border: 1px solid black;*/
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    overflow: auto
+}
+.vrelatorio_picUser{
+/*    border: 1px solid black;*/
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto
+}
+.vrelatorio_Relatorio{
+    /*    border: 1px solid blue;*/
+    display: inline-block;
+    margin-left: -4px;
+    width: 78%;
+    height: 100%;
+    overflow: auto;
+    padding-left: 20px;
+}
+.vrelatorio_Relatorio:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.vrelatorio_data{
+    /*    border: 1px solid black;*/
+    font-family: Roboto-Black;
+    text-transform: uppercase;
+    cursor: pointer
+}
+.vrelatorio_data p{
+    border: 1px solid transparent;
+    width: max-content;
+    padding: 0 10px;
+    font-size: 17px;
+    margin: 5px 0;
+    color:black
+}
+
+.vrelatorio_RelatorioLeft{
+    /*    border: 1px solid pink;*/
+    display: inline-block;
+    width: 45%;
+    height: 400px;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.vrelatorio_RelatorioLeft::-webkit-scrollbar-track {
+    background: #d0d4d3;
+}
+.vrelatorio_RelatorioLeft::-webkit-scrollbar {
+    width: 3px;
+}
+.vrelatorio_RelatorioLeft::-webkit-scrollbar-thumb {
+    background: #6c7f83;
+}
+#vrelatorio_RelatorioLeft{
+    height: 100%;
+    width: 100%;
+    display: table
+}
+
+
+
+.vhorawifi{
+    border: 1px solid transparent;
+    width: 170px;
+    height: 150px;
+    padding: 5px 0;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer
+}
+.vhorawifi p{
+    margin: 5px;
+    color: black
+}
+.vhorawifi_label{
+    font-family: Roboto-Regular;
+    /*    border: 1px solid black;*/
+    color: #5d7077;
+    margin: 0;
+    font-size: 20px;
+}
+.vhorawifi_hora{
+    font-family: pirulen;
+    color: #5d7077;
+    margin: 0;
+    font-size: 40px;
+}
+.vhorawifi_wifi{
+    /*    border: 1px solid black;*/
+    font-family: pirulen;
+    color: #5d7077;
+    font-size: 17px; 
+}
+.viconewifi{
+    height: 70px;
+    margin-bottom: 20px
+}
+.vparagraphwifi{
+    font-size: 0.8125vw;
+    font-family: pirulen;
+}
+
+.vrelatorio_salas{
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #d0d4d3;
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    /*    border: 1px solid black*/
+}
+.vrelatorio_salas_blocos{
+    display: inline-block;
+    /*    border: 1px solid black;*/
+    font-family: pirulen;
+    padding: 3px 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    background: #d0d4d3
+}
+.vrelatorio_salas_blocos_img{
+    height: 30px
+}
+.problemas{
+    background: none
+}
+.adicionarproblema{
+    display: block
+}
+.vrelatorio_titulocampos{
+    border-bottom: 1px solid #5d7077;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.vrelatorio_titulocampos img{
+    /*    border: 1px solid black;*/
+    height: 30px;
+    margin-top: 5px;
+    float: left;
+
+}
+.vrelatorio_titulocampos p{
+    /*    border: 1px solid black;*/
+    height: 40px;
+    float: left;
+    margin: 0;
+    line-height: 40px;
+    margin-left: 10px;
+    font-family: Roboto-black;
+    color: #3eba00;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.vrelatorio_RelatorioRight{
+    /*    border: 1px solid black;*/
+    display: inline-block;
+    width: 54%;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.vrelatorio_RelatorioRight::-webkit-scrollbar-track {
+    background: #d0d4d3;
+}
+.vrelatorio_RelatorioRight::-webkit-scrollbar {
+    width: 3px;
+}
+.vrelatorio_RelatorioRight::-webkit-scrollbar-thumb {
+    background: #6c7f83;
+}
+#vrelatorio_RelatorioRight{
+    height: 100%;
+    width: 100%;
+    display: table
+}
+
+.vrelatorio_relatorionote{
+    font-family: Roboto-regular;
+    /*        border: 1px solid black;*/
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #5d7077
+}
+
+
+
+.edit{
+    /*        border: 1px solid black;*/
+    position: absolute;
+    right: 247px;
+    bottom: 8px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 50px -12px rgba(24,18,30,0.3);
+    -moz-box-shadow: 0px 5px 50px -12px rgba(24,18,30,0.3);
+    box-shadow: 0px 5px 50px -12px rgba(24,18,30,0.3);
+}
+#editback{
+    display: none;
+    z-index: 99
+}
+.editimg{
+    height: 70px;
+}
+
+
+
+#corpoedit{
+    width: 247px;
+    border: 1px solid #e8e8e8;
+    height: 94%;
+    position: absolute;
+    right: 15px;
+    background: white;
+    -webkit-box-shadow: 0px 5px 50px -12px rgba(24,18,30,0.3);
+    -moz-box-shadow: 0px 5px 50px -12px rgba(24,18,30,0.3);
+    box-shadow: 0px 5px 50px -12px rgba(24,18,30,0.3);
+    display: none
+}
+.corpoedit{
+    width: 250px;
+    height: 100%;
+    display: table;
+    text-align: center;
+}
+.delete{
+    height: 45px;
+}
+.problema{
+    height: 45px;
+    margin-top: 20px;
+}
+.edittitulo{
+    margin-bottom: 40px;
+    color: #18121E;
+    font-size: 15px    
+}
+.editname{
+    margin: 10px;
+    color: #999999;
+    font-size: 13px
+}
+
+.bloquear{
+    pointer-events: none;
+}

@@ -1,0 +1,207 @@
+/*FONTES*/
+@font-face {
+    font-family: Womby-Regular;
+    src: url('../Fontes/Womby-Regular.ttf');
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url('../Fontes/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url('../Fontes/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('../Fontes/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: pirulen;
+    src: url('../Fontes/pirulen.ttf');
+}
+
+/*FONTES*/
+
+
+/*Cores
+
+NAVIBLUE
+#18121E
+
+GUNMETAL
+#233237
+
+RUSTYRED
+#984B43
+
+WARMYELLOW
+#EAC67A
+
+*/
+
+
+/*new colors
+
+verde
+#5d7077
+
+cinza
+#ededeb
+
+white
+
+roxo
+#bdb2d0
+
+laranja
+#fa6f08
+
+azul
+#12bbe6
+
+vermelho
+#a20027
+
+*/
+.corpo{
+    background: #ededeb;
+    margin: 0;
+    padding: 0;
+}
+.centralizar{
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+    position: static
+
+}
+.topo{
+    position: relative;
+    font-family: pirulen;
+    z-index: 5;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.logo{
+    /*    border: 1px solid black;*/
+    height: 70px;
+    line-height: 70px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+/*LOGIN*/
+.login{
+    /*    border: 1px solid black;*/
+    position: relative;
+    display: table;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.img_login{
+    /*    border: 1px solid white;*/
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0px 1px 5px rgba(24, 18, 30, .3);
+    background-image: url('../Img/Icones/Login.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    -webkit-background-size: 100px auto;
+    -moz-background-size:  100px auto;
+    -o-background-size:  100px auto;
+    background-size:  100px auto;
+
+}
+.formulario_login{
+    /*    border: 1px solid black;*/
+    width: 250px;
+    margin: 0 auto
+}
+.formulario_login input{
+    background-color: #d9d9d9;
+    border: none;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    float: left;
+    outline: none;
+    font-family: Roboto-Bold;
+}
+.formulario_login input[type='submit']{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0, 1);
+    float: none;
+    outline: none;
+    font-family: pirulen;
+    background: #819ca3;
+    height: 50px;
+    border: none;
+    padding:0 30px;
+    -webkit-transition:  cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -moz-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -ms-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    -o-transition: cubic-bezier(.190, 1.000, .500, 1.000) all .4s;
+    transition: cubic-bezier(.500, 1.000, .500, 1.000) all .4s; 
+    cursor: pointer
+}
+.formulario_login input[type='submit']:hover{
+    transform: rotateZ(0deg);
+}
+.formulario_login .icone{
+    height: 50px;
+    width: 50px;
+    float: left;
+    background: #5b6e75
+}
+.formulario_login .icone img{
+    height: 20px;
+    margin-top: 15px
+}
+/*LOGIN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rodape{
+    /*        border: 1px solid white;*/
+    height: calc(100% - 690px);
+    position: relative;
+    margin: 0 auto;
+    display: table;
+    text-align: center;
+    width: 100%
+}

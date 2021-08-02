@@ -1,0 +1,15 @@
+@media print {
+    .backrelatorio { 
+        page-break-inside: avoid;
+        background: transparent
+    }
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+    .edit, #editback, .iconeimprimir, .Fulltop, #corpoedit{
+        display: none !important
+    }
+}
+@page {
+    margin: 0.5cm 0cm 0.5cm 0cm;
+}

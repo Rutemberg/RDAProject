@@ -1,0 +1,134 @@
+@font-face {
+    font-family: pirulen;
+    src: url('../Fontes/pirulen.ttf');
+}
+.csscheckbox{
+    margin:1px 4px;
+    padding:5px 0;
+    position:relative;
+    cursor:pointer;
+    display:inline-block;
+    vertical-align:middle;
+    text-align: center;
+}
+
+
+.csscheckbox input{
+    position:absolute;
+    opacity:0
+}
+.csscheckbox span{
+    position:relative;
+    display:inline-block;
+    width:70px;height:30px;
+    background:#d0d4d3;
+    border:none;
+}
+.csscheckbox p{
+    font-family: pirulen;
+    position:relative;
+    display:inline-block;
+    z-index: 5;
+    margin: 0;
+    line-height: 30px;
+    color: black;
+    font-size: 14px
+}
+.csscheckbox span:hover{background:#5d7077}
+.csscheckbox span:after{
+    content:"";
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:#fff;
+    opacity:0;
+    -webkit-transition:all .15s ease-out;
+    transition:all .15s ease-out;
+    -webkit-transform:scale(.5);
+    transform:scale(.5);
+/*    -webkit-box-shadow: 0 2px 5px #999999;*/
+/*    box-shadow: 0px 1px 5px #999999;*/
+}
+.csscheckbox input:checked+span:after{
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+    background-color:#eee
+}
+.csscheckbox-default input:checked+span:after{background-color:#3eba00}
+.csscheckbox-warning input:checked+span:after{background-color:#f9a368}
+.csscheckbox-danger input:checked+span:after{background-color:#a20027}
+.csscheckbox-info input:checked+span:after{background-color:#bdb2d0}
+.csscheckbox-success input:checked+span:after{background-color:#3eba00}
+.csscheckbox-primary input:checked+span:after{background-color:#12bbe6}
+
+
+.wifi{
+    border-radius: 50%
+}
+.wifi span{
+    position:relative;
+    border-radius: 50%;
+    display:inline-block;
+    margin: 20px;
+    width:120px;height:120px;
+    background:#d0d4d3;
+    border:none;
+    text-align: center
+}
+.wifi p{
+/*    border-bottom: 1px solid #5d7077;*/
+    position:absolute;
+    display:inline-block;
+    z-index: 5;
+    top: 80px;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    color: black;
+    font-size: 12px;
+}
+.wifi img{
+/*    border: 1px solid black;*/
+    position:relative;
+    display:inline-block;
+    z-index: 5;
+    top: 20px;
+    width: 60px;
+    height: auto;
+    margin-left: 30px;
+    color: white;
+}
+.wifi span:hover{background:#5d7077}
+.wifi span:after{
+    border-radius: 50%;
+    content:"";
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color:#fff;
+    opacity:0;
+    -webkit-transition:all .15s ease-out;
+    transition:all .15s ease-out;
+    -webkit-transform:scale(.5);
+    transform:scale(.5);
+/*    -webkit-box-shadow: 0 2px 5px #999999;
+    box-shadow: 0px 1px 5px #999999;*/
+}
+.wifi input:checked+span:after{
+    border-radius: 50%;
+    opacity:1;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+    background-color:#eee
+}
+.csscheckbox-default input:checked+span:after{background-color:#5d7077}
+.csscheckbox-warning input:checked+span:after{background-color:#f9a368}
+.csscheckbox-danger input:checked+span:after{background-color:#a20027}
+.csscheckbox-info input:checked+span:after{background-color:#bdb2d0}
+.csscheckbox-success input:checked+span:after{background-color:#3eba00}
+.csscheckbox-primary input:checked+span:after{background-color:#12bbe6}
